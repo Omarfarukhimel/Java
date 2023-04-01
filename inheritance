@@ -1,1 +1,25 @@
+package inheritance;
+
+public class person {
+    String name;
+    String id ;
+    void information(){
+        System.out.println("name:-"+name);
+        System.out.println("id:-"+id);
+    }
+}
+
+package inheritance;
+
+public class teacher extends person{
+    double salary;
+    public static void main(String[] args) {
+        teacher teacher1 = new teacher();
+        teacher1.name = "omar faruk";
+        teacher1.id = "221-35-846";
+        teacher1.salary = 35000;
+        teacher1.information();
+        System.out.println("salary:-"+teacher1.salary);
+    }
+}
 
